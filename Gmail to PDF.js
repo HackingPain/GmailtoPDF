@@ -1,11 +1,11 @@
 // Google App Script
 
 function saveEmailsAsPDF() {
-    var labelName = 'Elliott/Caspari';
-    var keyword = 'support';
-    var startDate = new Date('August 1, 2022');
-    var endDate = new Date('May 25, 2023');
-    var folderName = 'Elliott Support Convo';
+    var labelName = '';// Enter name of label between ' '
+    var keyword = ''; // Enter keyword between ' '
+    var startDate = new Date(''); // Enter start date in (' ')
+    var endDate = new Date(''); // Enter end date in (' ')
+    var folderName = ''; // Enter folder name you want PDF exported
   
     // Get all emails matching the criteria
     var threads = GmailApp.search('label:' + labelName + ' after:' + startDate.toISOString() + ' before:' + endDate.toISOString() + ' "' + keyword + '"');
